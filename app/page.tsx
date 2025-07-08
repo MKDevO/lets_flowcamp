@@ -6,57 +6,32 @@ import { EventCard } from "@/components/event-card"
 const upcomingEvents = [
   {
     id: 1,
-    title: "Sunset Kayaking Adventure",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop&crop=center",
-    description: "Experience the magic of paddling through calm waters as the sun sets over the horizon.",
+    title: "Nauka Foila za Skuterem Wodnym",
+    image: "/images/foil_jetski.jpg",
+    description:
+      "Naucz się latać nad wodą! Poznaj tajniki hydrofoilingu z profesjonalnym instruktorem i skuterem wodnym.",
     date: "2024-02-15",
-    location: "Crystal Lake",
-    participants: 12,
-  },
-  {
-    id: 2,
-    title: "White Water Rafting Expedition",
-    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop&crop=center",
-    description: "Challenge yourself with thrilling rapids and breathtaking mountain scenery.",
-    date: "2024-02-22",
-    location: "Rapids River",
-    participants: 8,
-  },
-  {
-    id: 3,
-    title: "Stand-Up Paddleboard Yoga",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center",
-    description: "Find your balance and inner peace with yoga on the water.",
-    date: "2024-02-28",
-    location: "Serenity Bay",
-    participants: 15,
-  },
-  {
-    id: 4,
-    title: "Surfing Bootcamp Weekend",
-    image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=400&h=300&fit=crop&crop=center",
-    description: "Learn to ride the waves with our expert instructors in this intensive weekend course.",
-    date: "2024-03-05",
-    location: "Ocean Beach",
-    participants: 10,
-  },
-  {
-    id: 5,
-    title: "Mountain Lake Canoeing",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center",
-    description: "Explore pristine mountain lakes surrounded by stunning alpine scenery.",
-    date: "2024-03-12",
-    location: "Alpine Lake",
+    location: "Jezioro Mazurskie",
     participants: 6,
   },
   {
-    id: 6,
-    title: "Windsurfing Masterclass",
-    image: "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=400&h=300&fit=crop&crop=center",
-    description: "Master the art of windsurfing with advanced techniques and equipment.",
-    date: "2024-03-18",
-    location: "Windy Point",
-    participants: 8,
+    id: 2,
+    title: "Joga",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center",
+    description: "Znajdź równowagę i wewnętrzny spokój podczas sesji jogi na świeżym powietrzu nad wodą.",
+    date: "2024-02-22",
+    location: "Zatoka Spokoju",
+    participants: 15,
+  },
+  {
+    id: 3,
+    title: "Obóz flowcamp",
+    image: "/images/jezioro.jpg",
+    description:
+      "Intensywny 5-dniowy obóz łączący wszystkie sporty wodne, jogę i rozwój osobisty w przepięknej scenerii.",
+    date: "2024-03-01",
+    location: "Ośrodek nad Jeziorem",
+    participants: 20,
   },
 ]
 
@@ -69,23 +44,23 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Waves className="h-8 w-8 text-white" />
-              <span className="text-2xl font-bold text-white">AquaVenture</span>
+              <span className="text-2xl font-bold text-white">lets_flowcamp</span>
             </div>
             <div className="hidden md:flex items-center space-x-6">
               <Link href="/" className="text-white hover:text-blue-300 transition-colors">
-                Home
+                Strona Główna
               </Link>
               <Link href="#events" className="text-white hover:text-blue-300 transition-colors">
-                Events
+                Wydarzenia
               </Link>
               <Link href="#about" className="text-white hover:text-blue-300 transition-colors">
-                About
+                O Nas
               </Link>
               <Button
                 variant="outline"
                 className="text-white border-white hover:bg-white hover:text-black bg-transparent"
               >
-                Contact Us
+                Kontakt
               </Button>
             </div>
           </div>
@@ -101,24 +76,25 @@ export default function HomePage() {
 
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Dive Into Your Next
+            Zanurz Się w Swojej
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">
-              Adventure
+              Następnej Przygodzie
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100">
-            Experience the thrill of watersports and outdoor activities with expert guides and premium equipment
+            Przeżyj emocje sportów wodnych i aktywności na świeżym powietrzu z eksperckimi przewodnikami i najlepszym
+            sprzętem
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
-              Explore Events
+              Odkryj Wydarzenia
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg bg-transparent"
             >
-              Learn More
+              Dowiedz Się Więcej
             </Button>
           </div>
         </div>
@@ -128,11 +104,11 @@ export default function HomePage() {
       <section id="about" className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Our Mission</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Nasza Misja</h2>
             <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-              At AquaVenture, we believe that life's greatest moments happen when you step outside your comfort zone.
-              We're passionate about connecting people with the raw beauty and exhilarating power of water through
-              unforgettable outdoor experiences.
+              W lets_flowcamp wierzymy, że najwspanialsze chwile w życiu dzieją się, gdy wyjdziesz poza swoją strefę
+              komfortu. Jesteśmy pasjonatami łączenia ludzi z surowym pięknem i ekscytującą mocą wody poprzez
+              niezapomniane doświadczenia na świeżym powietrzu.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mt-16">
@@ -140,9 +116,10 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Waves className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Expert Guidance</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Eksperckie Przewodnictwo</h3>
                 <p className="text-gray-600">
-                  Professional instructors with years of experience in watersports and outdoor activities
+                  Profesjonalni instruktorzy z wieloletnim doświadczeniem w sportach wodnych i aktywnościach na świeżym
+                  powietrzu
                 </p>
               </div>
 
@@ -150,9 +127,9 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-teal-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Community Focus</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Skupienie na Społeczności</h3>
                 <p className="text-gray-600">
-                  Building lasting connections through shared adventures and outdoor experiences
+                  Budowanie trwałych więzi poprzez wspólne przygody i doświadczenia na świeżym powietrzu
                 </p>
               </div>
 
@@ -160,8 +137,10 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Premium Locations</h3>
-                <p className="text-gray-600">Carefully selected venues that showcase the best of nature's playground</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Wyjątkowe Lokalizacje</h3>
+                <p className="text-gray-600">
+                  Starannie wybrane miejsca, które pokazują najlepsze z naturalnego placu zabaw
+                </p>
               </div>
             </div>
           </div>
@@ -172,9 +151,9 @@ export default function HomePage() {
       <section id="events" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Nadchodzące Wydarzenia</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Join us for thrilling adventures that will challenge your limits and create memories to last a lifetime
+              Dołącz do nas na ekscytujące przygody, które sprawdzą twoje granice i stworzą wspomnienia na całe życie
             </p>
           </div>
 
@@ -193,60 +172,62 @@ export default function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Waves className="h-6 w-6" />
-                <span className="text-xl font-bold">AquaVenture</span>
+                <span className="text-xl font-bold">lets_flowcamp</span>
               </div>
-              <p className="text-gray-400">Your gateway to unforgettable watersports and outdoor adventures.</p>
+              <p className="text-gray-400">
+                Twoja brama do niezapomnianych sportów wodnych i przygód na świeżym powietrzu.
+              </p>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Quick Links</h3>
+              <h3 className="font-semibold mb-4">Szybkie Linki</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <Link href="/" className="hover:text-white transition-colors">
-                    Home
+                    Strona Główna
                   </Link>
                 </li>
                 <li>
                   <Link href="#events" className="hover:text-white transition-colors">
-                    Events
+                    Wydarzenia
                   </Link>
                 </li>
                 <li>
                   <Link href="#about" className="hover:text-white transition-colors">
-                    About
+                    O Nas
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Contact
+                    Kontakt
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Activities</h3>
+              <h3 className="font-semibold mb-4">Aktywności</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Kayaking</li>
-                <li>Surfing</li>
-                <li>Paddleboarding</li>
-                <li>White Water Rafting</li>
+                <li>Hydrofoiling</li>
+                <li>Joga</li>
+                <li>Obozy flowcamp</li>
+                <li>Sporty Wodne</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Contact Info</h3>
+              <h3 className="font-semibold mb-4">Informacje Kontaktowe</h3>
               <div className="space-y-2 text-gray-400">
-                <p>123 Adventure Lane</p>
-                <p>Coastal City, CC 12345</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@aquaventure.com</p>
+                <p>ul. Przygodowa 123</p>
+                <p>Nadmorskie Miasto, NM 12345</p>
+                <p>Telefon: (555) 123-4567</p>
+                <p>Email: info@letsflowcamp.com</p>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} AquaVenture. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} lets_flowcamp. Wszelkie prawa zastrzeżone.</p>
           </div>
         </div>
       </footer>

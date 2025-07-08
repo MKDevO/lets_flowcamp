@@ -13,127 +13,141 @@ import { EventCalendar } from "@/components/event-calendar"
 const eventsData = {
   1: {
     id: 1,
-    title: "Sunset Kayaking Adventure",
+    title: "Nauka Foila za Skuterem Wodnym",
     description:
-      "Experience the magic of paddling through calm waters as the sun sets over the horizon. This peaceful yet invigorating adventure is perfect for all skill levels. Our expert guides will lead you through scenic waterways while sharing local wildlife knowledge and ensuring your safety throughout the journey.",
-    fullDescription: `Join us for an unforgettable sunset kayaking experience that combines the tranquility of nature with the excitement of water sports. As the day winds down, we'll paddle through crystal-clear waters surrounded by stunning natural beauty.
+      "Naucz się latać nad wodą! Poznaj tajniki hydrofoilingu z profesjonalnym instruktorem i skuterem wodnym. To niezapomniane doświadczenie, które pozwoli Ci poczuć się jak ptak nad taflą wody.",
+    fullDescription: `Hydrofoiling to najnowszy trend w sportach wodnych, który pozwala dosłownie latać nad powierzchnią wody. Podczas naszych zajęć nauczysz się podstaw tej fascynującej dyscypliny pod okiem doświadczonych instruktorów.
 
-Our experienced guides will provide all necessary equipment and safety briefings. Whether you're a beginner or experienced paddler, this adventure is designed to accommodate all skill levels. We'll explore hidden coves, observe local wildlife, and witness one of nature's most spectacular displays as the sun paints the sky in brilliant colors.
+Nasze zajęcia rozpoczynamy od teorii - poznasz budowę foila, zasady fizyki rządzące tym sportem oraz podstawowe techniki bezpieczeństwa. Następnie przejdziemy do praktyki na wodzie, gdzie krok po kroku nauczysz się utrzymywać równowagę i kontrolować foil.
 
-What's included:
-• Professional kayak and safety equipment
-• Expert guide and safety briefing
-• Light refreshments and water
-• Photography opportunities
-• Wildlife spotting guide
+Co jest wliczone:
+• Profesjonalny sprzęt hydrofoilowy
+• Skuter wodny z instruktorem
+• Pełny instruktaż bezpieczeństwa
+• Kombinezony neoprenowe
+• Kaski i kamizelki ratunkowe
+• Sesja zdjęciowa
 
-What to bring:
-• Comfortable clothing that can get wet
-• Sun protection (hat, sunglasses, sunscreen)
-• Water bottle
-• Towel and change of clothes
-• Waterproof camera (optional)`,
-    location: "Crystal Lake",
-    duration: "3 hours",
-    difficulty: "Beginner",
-    maxParticipants: 12,
-    price: "$89",
+Wymagania:
+• Podstawowa umiejętność pływania
+• Minimalny wiek: 14 lat
+• Dobra kondycja fizyczna
+• Brak przeciwwskazań zdrowotnych
+
+Po zakończeniu kursu otrzymasz certyfikat ukończenia oraz dostęp do naszej społeczności hydrofoilerów!`,
+    location: "Jezioro Mazurskie",
+    duration: "4 godziny",
+    difficulty: "Średniozaawansowany",
+    maxParticipants: 6,
+    price: "299 zł",
     images: [
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=800&h=600&fit=crop&crop=center",
+      "/images/foil_jetski.jpg",
     ],
     availableDates: [
-      { date: "2024-02-15", times: ["17:00", "17:30", "18:00"] },
-      { date: "2024-02-16", times: ["17:00", "17:30"] },
-      { date: "2024-02-17", times: ["17:00", "18:00"] },
-      { date: "2024-02-22", times: ["17:00", "17:30", "18:00"] },
-      { date: "2024-02-23", times: ["17:00", "17:30"] },
+      { date: "2024-02-15", times: ["09:00", "14:00"] },
+      { date: "2024-02-16", times: ["09:00", "14:00"] },
+      { date: "2024-02-17", times: ["09:00"] },
+      { date: "2024-02-22", times: ["09:00", "14:00"] },
+      { date: "2024-02-23", times: ["09:00", "14:00"] },
     ],
   },
   2: {
     id: 2,
-    title: "White Water Rafting Expedition",
-    description: "Challenge yourself with thrilling rapids and breathtaking mountain scenery.",
-    fullDescription: `Get ready for the ultimate adrenaline rush with our white water rafting expedition! Navigate through exciting Class III and IV rapids while surrounded by stunning mountain landscapes. This adventure is perfect for thrill-seekers looking to push their limits.
+    title: "Joga",
+    description: "Znajdź równowagę i wewnętrzny spokój podczas sesji jogi na świeżym powietrzu nad wodą.",
+    fullDescription: `Nasza sesja jogi to wyjątkowe połączenie tradycyjnych praktyk z pięknem natury. Ćwiczymy w malowniczym miejscu nad wodą, gdzie dźwięki natury tworzą naturalną ścieżkę dźwiękową do naszej praktyki.
 
-Our professional guides have years of experience and will ensure your safety while maximizing the excitement. You'll learn proper paddling techniques, safety procedures, and work as a team to conquer the rapids.
+Sesje są dostosowane do wszystkich poziomów zaawansowania - od początkujących po zaawansowanych jogów. Nasz certyfikowany instruktor poprowadzi Cię przez sekwencję assan, które wzmocnią Twoje ciało i uspokoją umysł.
 
-What's included:
-• Professional rafting equipment and safety gear
-• Experienced river guide
-• Safety briefing and instruction
-• Lunch and refreshments
-• Transportation to/from river
-• Action photos
+Co jest wliczone:
+• Mata do jogi
+• Instrukcja z certyfikowanym nauczycielem
+• Sesja medytacji
+• Herbatka ziołowa po zajęciach
+• Miejsce w cieniu lub na słońcu (do wyboru)
+• Materiały do praktyki domowej
 
-Requirements:
-• Minimum age: 16 years
-• Good physical fitness required
-• Must be able to swim
-• Weight limit: 250 lbs`,
-    location: "Rapids River",
-    duration: "6 hours",
-    difficulty: "Advanced",
-    maxParticipants: 8,
-    price: "$149",
+Korzyści z regularnej praktyki:
+• Zwiększona elastyczność i siła
+• Lepsze zarządzanie stresem
+• Poprawa koncentracji
+• Głębszy sen
+• Większa świadomość ciała
+• Wewnętrzny spokój i równowaga
+
+Zajęcia odbywają się w małych grupach, co pozwala na indywidualne podejście do każdego uczestnika.`,
+    location: "Zatoka Spokoju",
+    duration: "1.5 godziny",
+    difficulty: "Wszystkie poziomy",
+    maxParticipants: 15,
+    price: "45 zł",
     images: [
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center",
     ],
     availableDates: [
-      { date: "2024-02-22", times: ["09:00", "13:00"] },
-      { date: "2024-02-23", times: ["09:00"] },
-      { date: "2024-03-01", times: ["09:00", "13:00"] },
+      { date: "2024-02-22", times: ["07:00", "18:00", "19:30"] },
+      { date: "2024-02-23", times: ["07:00", "18:00"] },
+      { date: "2024-02-24", times: ["07:00", "19:30"] },
+      { date: "2024-02-25", times: ["07:00", "18:00", "19:30"] },
     ],
   },
   3: {
     id: 3,
-    title: "Stand-Up Paddleboard Yoga",
-    description: "Find your balance and inner peace with yoga on the water.",
-    fullDescription: `Combine the serenity of yoga with the gentle challenge of stand-up paddleboarding in this unique wellness experience. Practice yoga poses while floating on calm waters, surrounded by nature's beauty.
+    title: "Obóz flowcamp",
+    description:
+      "Intensywny 5-dniowy obóz łączący wszystkie sporty wodne, jogę i rozwój osobisty w przepięknej scenerii.",
+    fullDescription: `Obóz flowcamp to kompletne doświadczenie transformacyjne, które łączy sporty wodne, praktyki mindfulness i rozwój osobisty. Przez 5 dni będziesz mieszkać w pięknym ośrodku nad jeziorem, uczestnicząc w różnorodnych aktywnościach i warsztatach.
 
-This session is suitable for all yoga levels and SUP experience. Our certified yoga instructor will guide you through a specially designed sequence that works with the natural movement of the water.
+Program obozu obejmuje:
 
-What's included:
-• SUP board and paddle
-• Yoga instruction
-• Safety equipment
-• Waterproof yoga mat
-• Post-session refreshments
-• Meditation session
+DZIEŃ 1 - Przywitanie i podstawy
+• Powitanie i integracja grupy
+• Wprowadzenie do filozofii flowcamp
+• Pierwsza sesja jogi o wschodzie słońca
+• Podstawy bezpieczeństwa na wodzie
 
-Benefits:
-• Improved balance and core strength
-• Enhanced mindfulness and relaxation
-• Full-body workout
-• Connection with nature
-• Stress relief`,
-    location: "Serenity Bay",
-    duration: "2 hours",
-    difficulty: "Beginner",
-    maxParticipants: 15,
-    price: "$65",
+DZIEŃ 2-4 - Intensywne treningi
+• Codzienne sesje jogi (rano i wieczorem)
+• Nauka różnych sportów wodnych
+• Warsztaty rozwoju osobistego
+• Sesje medytacji nad wodą
+• Ogniska i rozmowy przy gwiazdach
+
+DZIEŃ 5 - Integracja i pożegnanie
+• Podsumowanie doświadczeń
+• Planowanie dalszego rozwoju
+• Ceremonia zakończenia
+• Wymiana kontaktów
+
+Co jest wliczone:
+• 4 noclegi w komfortowych pokojach
+• Wszystkie posiłki (śniadania, obiady, kolacje)
+• Pełny program sportowy i rozwojowy
+• Sprzęt do wszystkich aktywności
+• Materiały szkoleniowe
+• Certyfikat ukończenia obozu
+• Dostęp do społeczności flowcamp
+
+Ten obóz to nie tylko nauka sportów wodnych, ale przede wszystkim podróż do siebie i odkrycie swojego potencjału.`,
+    location: "Ośrodek nad Jeziorem",
+    duration: "5 dni / 4 noce",
+    difficulty: "Wszystkie poziomy",
+    maxParticipants: 20,
+    price: "1299 zł",
     images: [
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=800&h=600&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop&crop=center",
+      "/images/jezioro.jpg",
     ],
     availableDates: [
-      { date: "2024-02-28", times: ["08:00", "10:00", "16:00"] },
-      { date: "2024-03-01", times: ["08:00", "10:00"] },
-      { date: "2024-03-02", times: ["08:00", "16:00"] },
+      { date: "2024-03-01", times: ["14:00"] },
+      { date: "2024-03-15", times: ["14:00"] },
+      { date: "2024-04-01", times: ["14:00"] },
+      { date: "2024-04-15", times: ["14:00"] },
     ],
   },
 }
 
-export default async function EventDetailsPage({ params }: { params: { id: string } }) {
-  const { id } = await params
+export default function EventDetailsPage({ params }: { params: { id: string } }) {
+  const { id } = params
   const event = eventsData[Number.parseInt(id) as keyof typeof eventsData]
 
   if (!event) {
@@ -148,11 +162,11 @@ export default async function EventDetailsPage({ params }: { params: { id: strin
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
               <Waves className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold text-gray-900">AquaVenture</span>
+              <span className="text-2xl font-bold text-gray-900">lets_flowcamp</span>
             </Link>
             <Link href="/" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors">
               <ChevronLeft className="h-4 w-4" />
-              <span>Back to Events</span>
+              <span>Powrót do Wydarzeń</span>
             </Link>
           </div>
         </div>
@@ -176,13 +190,13 @@ export default async function EventDetailsPage({ params }: { params: { id: strin
                 </Badge>
                 <Badge variant="secondary" className="flex items-center space-x-1">
                   <Users className="h-3 w-3" />
-                  <span>Max {event.maxParticipants} people</span>
+                  <span>Maks {event.maxParticipants} osób</span>
                 </Badge>
                 <Badge
                   variant={
-                    event.difficulty === "Beginner"
+                    event.difficulty === "Początkujący"
                       ? "default"
-                      : event.difficulty === "Advanced"
+                      : event.difficulty === "Zaawansowany"
                         ? "destructive"
                         : "secondary"
                   }
@@ -199,7 +213,7 @@ export default async function EventDetailsPage({ params }: { params: { id: strin
             {/* Detailed Description */}
             <Card>
               <CardHeader>
-                <CardTitle>Event Details</CardTitle>
+                <CardTitle>Szczegóły Wydarzenia</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="prose max-w-none">
@@ -219,14 +233,14 @@ export default async function EventDetailsPage({ params }: { params: { id: strin
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl text-center">{event.price}</CardTitle>
-                <CardDescription className="text-center">per person</CardDescription>
+                <CardDescription className="text-center">za osobę</CardDescription>
               </CardHeader>
             </Card>
 
             {/* Calendar */}
             <Card>
               <CardHeader>
-                <CardTitle>Available Dates & Times</CardTitle>
+                <CardTitle>Dostępne Daty i Godziny</CardTitle>
               </CardHeader>
               <CardContent>
                 <EventCalendar availableDates={event.availableDates} />
@@ -236,62 +250,62 @@ export default async function EventDetailsPage({ params }: { params: { id: strin
             {/* Registration Form */}
             <Card>
               <CardHeader>
-                <CardTitle>Register Your Interest</CardTitle>
+                <CardTitle>Zarejestruj Swoje Zainteresowanie</CardTitle>
                 <CardDescription>
-                  Fill out this form to express your interest or register for this event
+                  Wypełnij ten formularz, aby wyrazić zainteresowanie lub zarejestrować się na to wydarzenie
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="John" />
+                    <Label htmlFor="firstName">Imię</Label>
+                    <Input id="firstName" placeholder="Jan" />
                   </div>
                   <div>
-                    <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Doe" />
+                    <Label htmlFor="lastName">Nazwisko</Label>
+                    <Input id="lastName" placeholder="Kowalski" />
                   </div>
                 </div>
 
                 <div>
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="john@example.com" />
+                  <Input id="email" type="email" placeholder="jan@example.com" />
                 </div>
 
                 <div>
-                  <Label htmlFor="phone">Phone Number</Label>
+                  <Label htmlFor="phone">Numer Telefonu</Label>
                   <Input id="phone" type="tel" placeholder="(555) 123-4567" />
                 </div>
 
                 <div>
-                  <Label htmlFor="participants">Number of Participants</Label>
+                  <Label htmlFor="participants">Liczba Uczestników</Label>
                   <Input id="participants" type="number" min="1" max={event.maxParticipants} defaultValue="1" />
                 </div>
 
                 <div>
-                  <Label htmlFor="preferredDate">Preferred Date</Label>
+                  <Label htmlFor="preferredDate">Preferowana Data</Label>
                   <Input id="preferredDate" type="date" />
                 </div>
 
                 <div>
-                  <Label htmlFor="experience">Previous Experience</Label>
+                  <Label htmlFor="experience">Poprzednie Doświadczenie</Label>
                   <Textarea
                     id="experience"
-                    placeholder="Tell us about your experience with this activity..."
+                    placeholder="Opowiedz nam o swoim doświadczeniu z tą aktywnością..."
                     rows={3}
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="questions">Questions or Special Requests</Label>
-                  <Textarea id="questions" placeholder="Any questions or special requirements?" rows={3} />
+                  <Label htmlFor="questions">Pytania lub Specjalne Życzenia</Label>
+                  <Textarea id="questions" placeholder="Jakieś pytania lub specjalne wymagania?" rows={3} />
                 </div>
 
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">Submit Registration</Button>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">Wyślij Rejestrację</Button>
 
                 <p className="text-xs text-gray-500 text-center">
-                  By submitting this form, you agree to our terms and conditions. We'll contact you within 24 hours to
-                  confirm your registration.
+                  Wysyłając ten formularz, zgadzasz się na nasze warunki i zasady. Skontaktujemy się z Tobą w ciągu 24
+                  godzin, aby potwierdzić Twoją rejestrację.
                 </p>
               </CardContent>
             </Card>

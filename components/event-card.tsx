@@ -33,7 +33,7 @@ export function EventCard({ event }: EventCardProps) {
             }}
           />
           <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
-            <span className="text-sm font-medium text-gray-900">{event.participants} spots</span>
+            <span className="text-sm font-medium text-gray-900">{event.participants} miejsc</span>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ export function EventCard({ event }: EventCardProps) {
           <div className="flex items-center justify-between text-sm text-gray-500">
             <div className="flex items-center space-x-1">
               <Calendar className="h-4 w-4" />
-              <span>{new Date(event.date).toLocaleDateString()}</span>
+              <span>{new Date(event.date).toLocaleDateString("pl-PL")}</span>
             </div>
             <div className="flex items-center space-x-1">
               <MapPin className="h-4 w-4" />

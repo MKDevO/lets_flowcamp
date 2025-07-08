@@ -34,7 +34,7 @@ export function EventGallery({ images, title }: EventGalleryProps) {
   return (
     <>
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Photo Gallery</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Galeria Zdjęć</h2>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -46,7 +46,7 @@ export function EventGallery({ images, title }: EventGalleryProps) {
             >
               <Image
                 src={image || "/placeholder.svg"}
-                alt={`${title} - Photo ${index + 1}`}
+                alt={`${title} - Zdjęcie ${index + 1}`}
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
                 onError={(e) => {
@@ -94,7 +94,7 @@ export function EventGallery({ images, title }: EventGalleryProps) {
             <div className="relative aspect-video max-h-[80vh]">
               <Image
                 src={images[currentIndex] || "/placeholder.svg"}
-                alt={`${title} - Photo ${currentIndex + 1}`}
+                alt={`${title} - Zdjęcie ${currentIndex + 1}`}
                 fill
                 className="object-contain"
                 onError={(e) => {

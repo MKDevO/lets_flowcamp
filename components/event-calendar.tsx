@@ -69,20 +69,20 @@ export function EventCalendar({ availableDates }: EventCalendarProps) {
 
   const days = getDaysInMonth(currentMonth)
   const monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Styczeń",
+    "Luty",
+    "Marzec",
+    "Kwiecień",
+    "Maj",
+    "Czerwiec",
+    "Lipiec",
+    "Sierpień",
+    "Wrzesień",
+    "Październik",
+    "Listopad",
+    "Grudzień",
   ]
-  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+  const dayNames = ["Nd", "Pn", "Wt", "Śr", "Cz", "Pt", "Sb"]
 
   return (
     <div className="space-y-4">
@@ -136,7 +136,7 @@ export function EventCalendar({ availableDates }: EventCalendarProps) {
         <div className="space-y-3">
           <div className="flex items-center space-x-2">
             <Clock className="h-4 w-4 text-gray-500" />
-            <span className="text-sm font-medium">Available Times</span>
+            <span className="text-sm font-medium">Dostępne Godziny</span>
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -155,7 +155,7 @@ export function EventCalendar({ availableDates }: EventCalendarProps) {
           {selectedTime && (
             <div className="p-3 bg-blue-50 rounded-lg">
               <p className="text-sm text-blue-800">
-                Selected: {new Date(selectedDate).toLocaleDateString()} at {selectedTime}
+                Wybrano: {new Date(selectedDate).toLocaleDateString("pl-PL")} o {selectedTime}
               </p>
             </div>
           )}
