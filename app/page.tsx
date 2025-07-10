@@ -86,16 +86,20 @@ export default function HomePage() {
             sprzętem
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
-              Odkryj Wydarzenia
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg bg-transparent"
-            >
-              Dowiedz Się Więcej
-            </Button>
+            <Link href="#events">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
+                Odkryj Wydarzenia
+              </Button>
+            </Link>
+            <Link href="#about">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg bg-transparent"
+              >
+                Dowiedz Się Więcej
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
